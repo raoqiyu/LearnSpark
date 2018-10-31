@@ -1,5 +1,4 @@
 from pyspark.sql import SparkSession
-from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 
 spark = SparkSession.builder.appName('network word count').getOrCreate()
