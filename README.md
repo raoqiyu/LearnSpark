@@ -69,6 +69,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HADOOP_HOME/lib/native
 export SPARK_HOME=/opt/spark-hadoop/  
 # 将下载的spark中的pyspark加入到PYTHONPATH后，运行pyspark会报错:auth_token,
 # 需要安装py4j: pip install py4j
+# 系统中已安装py4j,仍然报错:auth_token,升级py4j
 export PYTHONPATH=$PYTHONPATH:$SPARK_HOME/python
 
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SPARK_HOME/bin:$SPARK_HOME/sbin/
